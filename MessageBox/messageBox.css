@@ -1,0 +1,83 @@
+.messages_container{
+    position: fixed;
+    right:10px;
+    z-index: 1000;
+}
+
+.message_box{
+    height: auto; 
+    opacity: 0;
+    padding: 0;
+    padding-bottom: 2px;
+    width: 200px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 3px;
+    max-height: 500px;
+    overflow-y: hidden;
+    transition: opacity 0.5s ease-in 0.5s, max-height 1s ease-out;
+}
+
+.message_box.opening{
+    opacity: 1;
+}
+
+.message_box.closing{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.message_box .message_header{ 
+    border-radius:  10px 10px 0 0;
+    font-weight: 700;
+}
+
+.message_box .message_header .message_title{
+    display: inline;
+    padding-left: 5px;    
+}
+
+
+.message_box .message_body{ 
+    margin: 5px;
+    font-size: 13pt;
+    word-wrap: break-word;
+}
+
+
+.message_box .close_btn{
+    display: inline;
+    float: right;
+    font-size: 10pt;
+    vertical-align: middle;
+    padding: 5px 10px 0 0;
+    margin: 0;
+    cursor: pointer;
+    background-color: rgba(1, 1, 1, 0);
+    border: none;
+    
+}
+
+.message_box.error_message{
+    background: rgba(250, 128, 114, 0.7);   
+}
+
+.message_box.error_message .message_header{
+    background: rgba(250, 128, 114, 1);
+}
+
+.message_box.success_message{
+    background: rgba(41, 170, 27, 0.7);   
+}
+
+.message_box.success_message .message_header{
+    background: rgba(41, 170, 27, 1);   
+}
+
+.message_box.warning_message{
+    background: rgba(207, 176, 0, 0.7);   
+}
+
+.message_box.warning_message .message_header{
+    background: rgb(207, 176, 0);   
+}
