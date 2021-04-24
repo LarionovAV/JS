@@ -1,0 +1,67 @@
+#message_constructor{
+    background-color: rgba(200, 200, 200, 0.7);
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    vertical-align: middle;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+}
+
+#message_constructor *{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#message_constructor .message_constructor_block *{
+    display: inline;
+}
+
+
+#message_constructor .message_constructor_block label{
+    color: white;
+    font-weight: 900;
+    vertical-align: middle;
+    text-shadow: 
+        1px 0 1px black,
+        -1px 0 1px black,
+        0 1px 1px black,
+        0 -1px 1px black;
+}
+#message_constructor .message_constructor_block input{
+    width: 50%;
+    float: right;
+    margin: 0%;
+}
+
+#message_constructor #message_constructor_btns_block{
+    display: flex;
+    padding-top: 10px;
+    margin: 0 auto;
+    
+}
+#message_constructor #message_constructor_btns_block button{
+    margin: auto;
+    width: 25%;
+    height: 30px;
+    font-weight: 700;
+    color: whitesmoke;
+    text-shadow: 
+        1px 0 1px black,
+        -1px 0 1px black,
+        0 1px 1px black,
+        0 -1px 1px black;
+}
+
+#message_constructor #message_constructor_btns_block #error_btn{
+    background-color: lightcoral;
+}
+
+#message_constructor #message_constructor_btns_block #warning_btn{
+    background-color: rgb(240, 240, 23);
+}
+
+#message_constructor #message_constructor_btns_block #success_btn{
+    background-color: rgb(52, 177, 52);
+}

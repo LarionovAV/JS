@@ -2,7 +2,7 @@ const timeOfMessageLife = 3000
 
 const MessagesContainer = document.createElement("div")     // Поле-контейнер для сообщений
 MessagesContainer.classList.add("messages_container")
-document.body.appendChild(MessagesContainer)
+document.body.prepend(MessagesContainer)
 
 
 function destroyMessage(element){
@@ -54,9 +54,5 @@ const showMessage = function(messageType, messageTitle, messageText){
     setTimeout(()=>{
         destroyMessage(messageBox)
     }, timeOfMessageLife)
-
 }
 
-showMessage("Error", "", "Операция завершилась неудачей")
-setTimeout(() => {showMessage("success", "", "Операция выполнена успешно")}, 1000)
-setTimeout(() => {showMessage("warning", "", "Предупреждение")}, 2000)
