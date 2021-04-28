@@ -30,10 +30,14 @@
 .message_box .message_header{ 
     border-radius:  10px 10px 0 0;
     font-weight: 700;
+    word-break: break-all;
+    overflow: hidden;
+    max-height: 40px;
 }
 
 .message_box .message_header .message_title{
-    display: inline;
+    display: inline-block;
+    width: 85%;
     padding-left: 5px;    
 }
 

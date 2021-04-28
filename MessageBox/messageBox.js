@@ -14,7 +14,7 @@ function destroyMessage(element){
 const showMessage = function(messageType, messageTitle, messageText){
     const messageBox = document.createElement("div")
     let messType 
-    switch (String(messageType).toLowerCase()) {
+    switch (String(messageType).trim().toLowerCase()) {
         case "success":
             messType = "success_message"
             break;
